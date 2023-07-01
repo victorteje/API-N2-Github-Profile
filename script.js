@@ -6,7 +6,8 @@ form.addEventListener("submit", (e) => {
   
   const APIURL = `https://api.github.com/users/${userName}`;
   
-  axios.get(APIURL).then(response => {
+  axios.get(APIURL)
+  .then(response => {
     const userData = response.data;
     console.log(userData);
     
@@ -22,7 +23,7 @@ form.addEventListener("submit", (e) => {
             <li>${userData.following} following</li>
             <li>${userData.public_repos} repositories</li>
           </ul>
-          <div class= "repo">${userData.repos}</div>
+          <a class= "repo" href=https://github.com/${userName}?tab=repositories>View repos</a>
         </div>
       </section>
     `;
