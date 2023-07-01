@@ -23,7 +23,7 @@ form.addEventListener("submit", (e) => {
             <li>${userData.following} following</li>
             <li>${userData.public_repos} repositories</li>
           </ul>
-          <a class= "repo" href=https://github.com/${userName}?tab=repositories>View repos</a>
+          <a class= "repo" href=https://github.com/${userName}?tab=repositories>View repositories</a>
         </div>
       </section>
     `;
