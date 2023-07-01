@@ -78,6 +78,7 @@ body {
   justify-content: space-between;
   padding: 0;
   max-width: 400px;
+  min-width: 325px;
 }
 
 .user-info ul li {
